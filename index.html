@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/sass/main.scss" />
+
+    <title>Chef</title>
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <script type="module" src="src/main.js"></script>
+  </head>
+  <body>
+    <!-- HERO -->
+    <header class="header-primary">
+      <!-- NAV -->
+      <img
+        class="logo padding-block-start-32 m-inline-auto"
+        src="src/images/logo.svg"
+        alt="Chef logo"
+      />
+      <nav class="nav margin-block-start-28">
+        <ul class="nav__list flex-group m-inline-auto">
+          <li class="nav__item"><a href="#About">About</a></li>
+          <li class="nav__item"><a href="#Meals">Meals</a></li>
+          <li class="nav__item"><a href="#Testimonials">Testimonials</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <!-- HEADLINE -->
+
+          <h1 class="heading-primary margin-block-end-48" data-type="white">
+            Homecooked meals<br />
+            delivered straight to your door
+          </h1>
+          <div class="flex-group m-inline-auto">
+            <button class="btn btn--accent">Place order</button>
+            <button class="btn btn--outline">More info</button>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT US -->
+      <section id="about-us">
+        <div class="container even-columns">
+          <img src="/src/images/about.jpg" alt="" />
+
+          <div class="content">
+            <h2 class="heading-secondary">This is a nice big heading</h2>
+            <p class="subhead">
+              THIS IS A SUBHEAD WHICH MENTIONS SOME INTERESTING THINGS
+            </p>
+            <h3 class="heading-tertiary">THIS INTRODUCES THE FOLLOWING TEXT</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas
+              egestas dignissim. Quisque pretium nisi a rhoncus posuere.
+            </p>
+            <p>
+              Ut posuere mauris nisl, sed consequat orci ultrices ac. Fusce et elit et
+              nisl eleifend hendrerit. Nulla ac aliquam mauris. Aenean quam lacus, auctor
+              eu lacus vitae, egestas elementum turpis. Morbi sed justo justo.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- MEALS -->
+      <section id="meals">
+        <h2 class="heading-secondary">This is a nice big heading</h2>
+        <p class="subhead">THIS IS A SUBHEAD WHICH MENTIONS SOME INTERESTING THINGS</p>
+        <div class="meals even-columns">
+          <!-- Meal 1 -->
+          <div class="meal">
+            <h3 class="heading-tertiary">This is a subtitle</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas
+              egestas dignissim. Quisque pretium nisi a rhoncus posuere.
+            </p>
+          </div>
+          <!-- Meal 2 -->
+          <div class="meal">
+            <h3 class="heading-tertiary">This is a subtitle</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas
+              egestas dignissim. Quisque pretium nisi a rhoncus posuere.
+            </p>
+          </div>
+          <!-- Meal 3 -->
+          <div class="meal">
+            <h3 class="heading-tertiary">This is a subtitle</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas
+              egestas dignissim. Quisque pretium nisi a rhoncus posuere.
+            </p>
+          </div>
+          <!-- Meal 4 -->
+          <div class="meal">
+            <h3 class="heading-tertiary">This is a subtitle</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas
+              egestas dignissim. Quisque pretium nisi a rhoncus posuere.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- about meals -->
+      <section id="meals__about">
+        <h2 class="heading-secondary" data-type="white">This is a nice big heading</h2>
+        <p class="subhead">THIS IS A SUBHEAD WHICH MENTIONS SOME INTERESTING THINGS</p>
+        <div class="card-container even-columns">
+          <!-- meal image 1 -->
+          <div class="card">
+            <img src="src/images/meal-01.jpg" alt="Salmon plate" />
+            <div class="card__desc">
+              <h3 class="heading-tertiary" data-type="white">About this meal</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas
+                egestas dignissim.
+              </p>
+            </div>
+          </div>
+          <!-- meal image 2 -->
+          <div class="card">
+            <img src="src/images/meal-02.jpg" alt="Taco plate" />
+            <div class="card__desc">
+              <h3 class="heading-tertiary" data-type="white">About this meal</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas
+                egestas dignissim.
+              </p>
+            </div>
+          </div>
+          <!-- meal image 3 -->
+          <div class="card">
+            <img src="src/images/meal-03.jpg" alt="Oisters cooking in a pan" />
+            <div class="card__desc">
+              <h3 class="heading-tertiary" data-type="white">About this meal</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas
+                egestas dignissim.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials">
+        <h2>What our clients are saying about us</h2>
+        <div class="testimonials even-columns">
+          <!-- testimonial 1 -->
+          <div class="card">
+            <img src="src/images/testimonial-01.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas
+              egestas dignissim. Quisque pretium nisi a rhoncus posuere. Ut posuere mauris
+              nisl, sed consequat orci ultrices ac. Fusce et elit et nisl eleifend
+              hendrerit. Nulla ac aliquam mauris. Aenean quam lacus, auctor eu lacus.
+            </p>
+            <div class="testimonial__footer">
+              <p>John deer</p>
+              <span>Manager at FoodCo.</span>
+            </div>
+          </div>
+          <!-- testimonial 1 -->
+          <div class="card">
+            <img src="src/images/testimonial-02.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas
+              egestas dignissim. Quisque pretium nisi a rhoncus posuere. Ut posuere mauris
+              nisl, sed consequat orci ultrices ac. Fusce et elit et nisl eleifend
+              hendrerit. Nulla ac aliquam mauris. Aenean quam lacus, auctor eu lacus.
+            </p>
+            <div class="testimonial__footer">
+              <p>John deer</p>
+              <span>Manager at FoodCo.</span>
+            </div>
+          </div>
+          <!-- testimonial 1 -->
+          <div class="card">
+            <img src="src/images/testimonial-03.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas
+              egestas dignissim. Quisque pretium nisi a rhoncus posuere. Ut posuere mauris
+              nisl, sed consequat orci ultrices ac. Fusce et elit et nisl eleifend
+              hendrerit. Nulla ac aliquam mauris. Aenean quam lacus, auctor eu lacus.
+            </p>
+            <div class="testimonial__footer">
+              <p>John deer</p>
+              <span>Manager at FoodCo.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>A good place for some basic footer infromation</p>
+      <p>©2022 Persronal Chef Services</p>
+      <p>555 Boulevard Anywhere, Montreal, Quebec, J1S 1S9 | 123-555-1234</p>
+    </footer>
+  </body>
+</html>
