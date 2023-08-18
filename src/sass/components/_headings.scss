@@ -1,0 +1,39 @@
+@use "../abstracts/" as *;
+
+.heading {
+  &-primary,
+  &-secondary {
+    font-family: $ff-serif;
+    line-height: 1;
+
+    &[data-type="white"] {
+        color: clr(neutral, 100);
+      }
+  }
+
+  &-primary {
+    font-size: 5rem;
+    
+  }
+
+  &-secondary {
+    font-size: 3.75rem;
+    color: clr(primary, 500);
+
+    & + .subhead{
+        font-size: 1.75rem;
+        margin-bottom: 1.75rem;
+        margin-top: .75rem;
+    }
+  }
+
+  &-tertiary{
+    font-size: 1.25rem;
+    color: clr(neutral, 900);
+    font-weight: $fw-bold;
+
+    &[data-type="white"] {
+        color: clr(neutral, 100);
+      }
+  }
+}

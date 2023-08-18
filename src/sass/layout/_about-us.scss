@@ -1,0 +1,14 @@
+#about-us {
+  & img {
+    // to overlay the image onto the hero section
+    translate: (0 -10%);
+    height: 100%;
+    object-fit: cover;
+  }
+
+  & .content {
+    margin-top: 7rem;
+    text-align: left;
+    align-self: center;
+  }
+}

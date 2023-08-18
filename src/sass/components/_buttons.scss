@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.btn {
+    display: inline-flex;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1;
+    border: 0;
+  
+    padding: 1.125em 2em;
+
+    &--accent{
+        background-color: clr(primary, 400);
+        color: clr(neutral, 900);
+    }
+
+    &--outline{
+        --_border: 2px;
+        --_color: #{clr(neutral, 100)};
+        background-color: transparent;
+        
+        // outline: var(--_border) solid var(--_color);
+        // outline-offset: var(--_border);
+        color: var(--_color);
+    }
+  }

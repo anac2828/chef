@@ -1,0 +1,10 @@
+@use '../abstracts/' as *;
+
+#meals {
+  background-color: clr(neutral, 200);
+  padding: 7rem;
+
+  &__about {
+    background-image: url('/src/images/meals-bg.jpg');
+  }
+}

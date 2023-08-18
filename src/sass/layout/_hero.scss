@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+
+.hero {
+  background-image: url('/src/images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 20rem;
+}
