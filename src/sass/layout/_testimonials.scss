@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+#testimonials {
+  & .container {
+    --max-width: #{$container-max-width-wide};
+  }
+}

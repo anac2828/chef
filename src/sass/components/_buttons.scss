@@ -16,12 +16,11 @@
     }
 
     &--outline{
-        --_border: 2px;
-        --_color: #{clr(neutral, 100)};
+        --outline-size: 5px;
+        --color: #{clr(neutral, 100)};
         background-color: transparent;
-        
-        // outline: var(--_border) solid var(--_color);
-        // outline-offset: var(--_border);
-        color: var(--_color);
+        outline: var(--outline-size) solid var(--color);
+        outline-offset: calc(var(--outline-size) * -1);
+        color: var(--color);
     }
   }

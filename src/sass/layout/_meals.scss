@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+#meals {
+  --grid-gap: 3rem;
+  background-color: clr(neutral, 200);
+  
+// MEAL IMAGEs
+  &__imgs {
+    @include whiteText;
+    background-image: url('/src/images/meals-bg.jpg');
+
+    & .container{
+      --max-width: #{$container-max-width-wide};
+    }
+  }
+}

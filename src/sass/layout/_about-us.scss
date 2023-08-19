@@ -1,14 +1,18 @@
+@use '../abstracts/' as *;
+
 #about-us {
+
+  --grid-gap: 3rem;
+  padding-block-end: 0;
+
   & img {
     // to overlay the image onto the hero section
-    translate: (0 -10%);
-    height: 100%;
-    object-fit: cover;
+    translate: (0 #{($section-padding * -1) * 2});
+    // height: 100%;
+    // object-fit: cover;
   }
 
   & .content {
-    margin-top: 7rem;
     text-align: left;
-    align-self: center;
   }
 }

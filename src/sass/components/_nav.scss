@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
 .nav{
+    
     &__list{
         --flex-gap: 1.5rem;
         list-style: none;

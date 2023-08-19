@@ -2,6 +2,7 @@
 @use "sass:math";
 @use "sass:map";
 @use "breakpoints" as *;
+@use "functions" as *;
 
 @mixin mq($size) {
   @if map.has-key($breakpoints, $size) {
@@ -19,5 +20,11 @@
     }
   } @else {
     @error 'the keyword #{$size} is not in the $breakpoints map';
+  }
+}
+
+@mixin whiteText() {
+  &[data-type="white"] {
+    color: clr(neutral, 100);
   }
 }

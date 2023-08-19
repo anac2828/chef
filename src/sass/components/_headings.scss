@@ -6,34 +6,46 @@
     font-family: $ff-serif;
     line-height: 1;
 
-    &[data-type="white"] {
-        color: clr(neutral, 100);
-      }
+    @include whiteText;
   }
 
   &-primary {
     font-size: 5rem;
-    
   }
 
   &-secondary {
     font-size: 3.75rem;
     color: clr(primary, 500);
 
-    & + .subhead{
-        font-size: 1.75rem;
-        margin-bottom: 1.75rem;
-        margin-top: .75rem;
+    // If there is a subhead after a secondary headline
+    & + .subhead {
+      font-size: 1.75rem;
+      margin-bottom: 1.75rem;
+      margin-top: 1rem;
+
+      // For subheads that are color white
+      @include whiteText;
+
+      // For subheads that have a border decoration
+      &[data-decoration="true"] {
+        &::after {
+          content: "";
+          display: block;
+          width: 10rem;
+          height: 1px;
+          background-color: currentColor;
+          margin-inline: auto;
+          margin-block: 2.25rem;
+        }
+      }
     }
   }
 
-  &-tertiary{
+  &-tertiary {
     font-size: 1.25rem;
     color: clr(neutral, 900);
     font-weight: $fw-bold;
 
-    &[data-type="white"] {
-        color: clr(neutral, 100);
-      }
+    @include whiteText;
   }
 }

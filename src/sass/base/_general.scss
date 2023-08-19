@@ -12,3 +12,7 @@ body {
 p:not(:last-child) {
   margin-bottom: 1rem;
 }
+
+section{
+  padding-block: $section-padding;
+}
