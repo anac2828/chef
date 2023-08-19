@@ -28,7 +28,7 @@
         alt="Chef logo"
       />
       <nav class="nav margin-block-start-28">
-        <ul class="nav__list flex-group m-inline-auto">
+        <ul class="nav__list flex-group">
           <li class="nav__item"><a href="#About">About</a></li>
           <li class="nav__item"><a href="#Meals">Meals</a></li>
           <li class="nav__item"><a href="#Testimonials">Testimonials</a></li>
@@ -45,7 +45,7 @@
             Homecooked meals<br />
             delivered straight to your door
           </h1>
-          <div class="flex-group m-inline-auto">
+          <div class="flex-group">
             <button class="btn btn--accent">Place order</button>
             <button class="btn btn--outline">More info</button>
           </div>
@@ -54,7 +54,15 @@
       <!-- ABOUT US -->
       <section id="about-us">
         <div class="container even-columns">
-          <img src="/src/images/about.jpg" alt="" />
+          <picture>
+            <source srcset="src/images/about.avif" type="image/avif" />
+            <source srcset="src/images/about.webp" type="image/webp" />
+            <img
+              class="shift-up box-shadow-1"
+              src="assets/about.jpg"
+              alt="several plates of food seen from above on a white table, some with figs and basil and others with grapefruit and sliced bananas with a brown sauce on top"
+            />
+          </picture>
 
           <div class="content">
             <h2 class="heading-secondary">This is a nice big heading</h2>
@@ -127,9 +135,13 @@
         </p>
         <div class="container even-columns">
           <!-- meal image 1 -->
-          <div class="card">
-            <img src="src/images/meal-01.jpg" alt="Salmon plate" />
-            <div class="card__desc">
+          <figure class="interactive-figure">
+            <picture>
+              <source srcset="src/images/meal-01.avif" />
+              <source srcset="src/images/meal-01.webp" />
+              <img src="src/images/meal-01.jpg" alt="Salmon plate" />
+            </picture>
+            <figcaption>
               <h3 class="heading-tertiary" data-type="white">
                 About this meal
               </h3>
@@ -137,12 +149,16 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 egestas egestas dignissim.
               </p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
           <!-- meal image 2 -->
-          <div class="card">
-            <img src="src/images/meal-02.jpg" alt="Taco plate" />
-            <div class="card__desc">
+          <figure class="interactive-figure">
+            <picture>
+              <source srcset="src/images/meal-02.avif" />
+              <source srcset="src/images/meal-02.webp" />
+              <img src="src/images/meal-02.jpg" alt="Taco plate" />
+            </picture>
+            <figcaption>
               <h3 class="heading-tertiary" data-type="white">
                 About this meal
               </h3>
@@ -150,12 +166,19 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 egestas egestas dignissim.
               </p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
           <!-- meal image 3 -->
-          <div class="card">
-            <img src="src/images/meal-03.jpg" alt="Oisters cooking in a pan" />
-            <div class="card__desc">
+          <figure class="interactive-figure">
+            <picture>
+              <source srcset="src/images/meal-03.avif" />
+              <source srcset="src/images/meal-03.webp" />
+              <img
+                src="src/images/meal-03.jpg"
+                alt="Oisters cooking in a pan"
+              />
+            </picture>
+            <figcaption>
               <h3 class="heading-tertiary" data-type="white">
                 About this meal
               </h3>
@@ -163,24 +186,30 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 egestas egestas dignissim.
               </p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
       <!-- TESTIMONIALS -->
       <section id="testimonials">
-        <h2 class="heading-secondary margin-block-end-80">What our clients are saying about us</h2>
+        <h2 class="heading-secondary margin-block-end-80">
+          What our clients are saying about us
+        </h2>
         <div class="container even-columns">
           <!-- testimonial 1 -->
           <div class="card" data-shadow="true">
-            <img src="src/images/testimonial-01.jpg" alt="" />
+            <picture>
+              <source srcset="src/images/testimonial-01.avif" />
+              <source srcset="src/images/testimonial-01.webp" />
+              <img src="src/images/testimonial-01.jpg" alt="" />
+            </picture>
             <p class="card__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              egestas egestas dignissim. Quisque pretium nisi a rhoncus posuere.
-              Ut posuere mauris nisl, sed consequat orci ultrices ac. Fusce et
-              elit et nisl eleifend hendrerit. Nulla ac aliquam mauris. Aenean
-              quam lacus, auctor eu lacus.
+              The food from this home cooked meal service tastes like it was
+              prepared from scratch in my own kitchen with fresh, high quality
+              ingredients. The delivery is seamless and meals always arrive hot.
+              It takes the stress out of meal planning during my busy work
+              weeks.
             </p>
             <div class="card__footer">
               <p>John deer</p>
@@ -189,13 +218,17 @@
           </div>
           <!-- testimonial 1 -->
           <div class="card" data-shadow="true">
-            <img src="src/images/testimonial-02.jpg" alt="" />
+            <picture>
+              <source srcset="src/images/testimonial-02.avif" />
+              <source srcset="src/images/testimonial-02.webp" />
+              <img src="src/images/testimonial-02.jpg" alt="" />
+            </picture>
             <p class="card__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              egestas egestas dignissim. Quisque pretium nisi a rhoncus posuere.
-              Ut posuere mauris nisl, sed consequat orci ultrices ac. Fusce et
-              elit et nisl eleifend hendrerit. Nulla ac aliquam mauris. Aenean
-              quam lacus, auctor eu lacus.
+              You can tell the chefs have culinary training - the dishes are
+              restaurant quality made with wholesome, locally-sourced
+              ingredients. The variety keeps things interesting for my family.
+              Only downside is packaging could be more eco-friendly. Overall,
+              delicious fresh meals at a reasonable price!
             </p>
             <div class="card__footer">
               <p>John deer</p>
@@ -204,13 +237,18 @@
           </div>
           <!-- testimonial 1 -->
           <div class="card" data-shadow="true">
-            <img src="src/images/testimonial-03.jpg" alt="" />
+            <picture>
+              <source srcset="src/images/testimonial-03.avif" />
+              <source srcset="src/images/testimonial-03.webp" />
+              <img src="src/images/testimonial-03.jpg" alt="" />
+            </picture>
             <p class="card__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              egestas egestas dignissim. Quisque pretium nisi a rhoncus posuere.
-              Ut posuere mauris nisl, sed consequat orci ultrices ac. Fusce et
-              elit et nisl eleifend hendrerit. Nulla ac aliquam mauris. Aenean
-              quam lacus, auctor eu lacus.
+              As a busy parent without time to cook every night, this service is
+              a life saver! The pre-made meals just need a quick reheat and
+              taste incredible - so much better than frozen supermarket meals. I
+              love that I can customize my weekly order. The healthy ingredients
+              give me peace of mind and save me time. Worth it for the
+              convenience and quality!
             </p>
             <div class="card__footer">
               <p>John deer</p>

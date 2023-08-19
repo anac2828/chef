@@ -1,25 +1,24 @@
-@use "../abstracts/" as *;
+@use '../abstracts/' as *;
 
 .heading {
   &-primary,
   &-secondary {
     font-family: $ff-serif;
-    line-height: 1;
 
     @include whiteText;
   }
 
   &-primary {
-    font-size: 5rem;
+    @include fontSize(900);
   }
 
   &-secondary {
-    font-size: 3.75rem;
+    @include fontSize(800);
     color: clr(primary, 500);
 
     // If there is a subhead after a secondary headline
     & + .subhead {
-      font-size: 1.75rem;
+      @include fontSize(600);
       margin-bottom: 1.75rem;
       margin-top: 1rem;
 
@@ -27,9 +26,9 @@
       @include whiteText;
 
       // For subheads that have a border decoration
-      &[data-decoration="true"] {
+      &[data-decoration='true'] {
         &::after {
-          content: "";
+          content: '';
           display: block;
           width: 10rem;
           height: 1px;
@@ -42,9 +41,10 @@
   }
 
   &-tertiary {
-    font-size: 1.25rem;
+    @include fontSize(500);
     color: clr(neutral, 900);
     font-weight: $fw-bold;
+    text-transform: uppercase;
 
     @include whiteText;
   }

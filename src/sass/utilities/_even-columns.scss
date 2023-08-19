@@ -3,6 +3,11 @@
 .even-columns {
   display: grid;
   gap: var(--grid-gap, $grid-gap);
+  justify-content: center;
+
+  & > * {
+    max-width: 500px;
+  }
 
   @include mq(medium) {
     grid-auto-flow: column;

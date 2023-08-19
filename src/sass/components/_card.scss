@@ -1,28 +1,11 @@
 @use "../abstracts/" as *;
 
 .card {
-  position: relative;
+  display: grid;
+  // makes the body text row the same even if there is less text
+  grid-template-rows: auto 1fr auto;
 
-  &__desc {
-    padding: $card-body-padding-sm;
-    text-align: left;
-    background-color: rgb(clr(neutral, 900), 0.5);
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity .5s;
-  }
 
-//   When the card is hovered the description will show up
-  &:hover &__desc{
-    opacity: 1;
-  }
-
-  & .heading-tertiary {
-    text-transform: uppercase;
-  }
-
-//   Testimonials
   &[data-shadow="true"]{
     color: clr(neutral, 500);
     line-height: 1.5;
@@ -30,12 +13,14 @@
   }
 
   &__text{
+    align-self: center;
     position: relative;
     padding: $card-body-padding;
 
     // decoration
     &::before{
         --margin: 2rem;
+        // content "\201C"
         content: "";
         display: block;
         background-image: url('/src/images/quotation-mark.svg');
@@ -52,7 +37,7 @@
     padding-block: size(16);
 
     p{
-        font-size: fs(500);
+        @include fontSize(500);
         font-weight: $fw-bold;
         color: clr(primary, 500);
         margin-block-end: 0;

@@ -1,26 +1,31 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .btn {
-    display: inline-flex;
-    cursor: pointer;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 1;
-    border: 0;
-  
-    padding: 1.125em 2em;
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1;
+  border: 0;
+  font-weight: $fw-bold;
+  padding: 1.125em 2em;
 
-    &--accent{
-        background-color: clr(primary, 400);
-        color: clr(neutral, 900);
-    }
-
-    &--outline{
-        --outline-size: 5px;
-        --color: #{clr(neutral, 100)};
-        background-color: transparent;
-        outline: var(--outline-size) solid var(--color);
-        outline-offset: calc(var(--outline-size) * -1);
-        color: var(--color);
-    }
+  &:is(:focus, :hover) {
+    background-color: clr(neutral, 100);
+    color: clr(neutral, 900);
   }
+
+  &--accent {
+    background-color: clr(primary, 400);
+    color: clr(neutral, 900);
+  }
+
+  &--outline {
+    --outline-size: 5px;
+    --color: #{clr(neutral, 100)};
+    background-color: transparent;
+    outline: var(--outline-size) solid var(--color);
+    outline-offset: calc(var(--outline-size) * -1);
+    color: var(--color);
+  }
+}

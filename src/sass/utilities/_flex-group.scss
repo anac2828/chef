@@ -4,5 +4,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--flex-gap, $flex-group-gap);
-  width: fit-content;
+  // width: fit-content;
+  justify-content: center;
 }

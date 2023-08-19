@@ -1,5 +1,6 @@
 @use '../abstracts/' as *;
 
 .header-primary {
-  background-color: lightgray;
+  position: absolute;
+  inset: 0 0 auto;
 }

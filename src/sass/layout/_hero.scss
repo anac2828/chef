@@ -1,8 +1,8 @@
 @use '../abstracts/' as *;
 
 .hero {
-  background-image: url('/src/images/hero-bg.jpg');
-  background-repeat: no-repeat;
+  background-image: url('/src/images/hero-bg.webp');
   background-size: cover;
-  padding-block: 20rem;
+  background-position: center;
+  padding-block: $hero-padding;
 }

@@ -28,3 +28,12 @@
     color: clr(neutral, 100);
   }
 }
+
+@mixin fontSize($value) {
+  @debug $value;
+  @debug $value > 600;
+  font-size: fs($value);
+  @if $value > 600 {
+    line-height: 1.1;
+  }
+}
