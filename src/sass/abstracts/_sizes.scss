@@ -17,7 +17,7 @@ $container-inline-padding: 1rem;
 $container-max-width: 77.75rem;
 $container-max-width-wide: 100rem;
 
-$card-body-padding: 5rem;
+$card-body-padding: clamp(2rem, 3vw, 5rem);
 $card-body-padding-sm: 2rem;
 
 $grid-gap: 1.5rem;

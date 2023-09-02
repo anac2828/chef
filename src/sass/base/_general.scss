@@ -16,4 +16,5 @@ p:not(:last-child) {
 
 section{
   padding-block: $section-padding;
+  padding-inline: calc($section-padding * 2 - $container-inline-padding);
 }
