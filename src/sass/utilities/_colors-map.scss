@@ -1,4 +1,14 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
+
+// loops through the _colors.scss and creates set of classes
+
+// $color - neutral or primary
+// $shade-map = 900, 400, 500, etc.
+// $colors = the variable in _colors.scss
+
+// .clr-neutral-900 {
+//   color: #212121;
+// }
 
 @each $color, $shade-map in $colors {
   @each $shade, $value in $shade-map {
@@ -10,4 +20,3 @@
     }
   }
 }
-  

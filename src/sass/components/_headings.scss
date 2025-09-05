@@ -5,6 +5,7 @@
   &-secondary {
     font-family: $ff-serif;
 
+    // mixin - for headline with data-type=white
     @include whiteText;
   }
 
@@ -22,10 +23,10 @@
       margin-bottom: 1.75rem;
       margin-top: 1rem;
 
-      // For subheads that are color white
+      // For subheads with data-type=white
       @include whiteText;
 
-      // For subheads that have a border decoration
+      // Adds a bottom border to the subhead
       &[data-decoration='true'] {
         &::after {
           content: '';
@@ -45,6 +46,7 @@
     color: clr(neutral, 900);
     font-weight: $fw-bold;
     text-transform: uppercase;
+    margin-bottom: size(8);
 
     @include whiteText;
   }

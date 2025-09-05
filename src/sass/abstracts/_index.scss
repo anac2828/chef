@@ -1,6 +1,9 @@
-@forward "breakpoints";
-@forward "colors";
-@forward "functions";
-@forward "mixins";
-@forward "sizes";
-@forward "typography";
+// An index.scss file is typically used in SCSS projects to manage and organize imports from
+// other SCSS files within a folder. It acts as a central point to forward or include various styles,
+// making the overall structure cleaner and more maintainable.
+@forward 'breakpoints';
+@forward 'colors';
+@forward 'functions';
+@forward 'mixins';
+@forward 'sizes';
+@forward 'typography';

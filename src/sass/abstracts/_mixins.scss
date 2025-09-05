@@ -1,12 +1,13 @@
-@use "sass:meta";
-@use "sass:math";
-@use "sass:map";
-@use "breakpoints" as *;
-@use "functions" as *;
+@use 'sass:meta';
+@use 'sass:math';
+@use 'sass:map';
+@use 'breakpoints' as *;
+@use 'functions' as *;
 
 @mixin mq($size) {
   @if map.has-key($breakpoints, $size) {
-    $breakpoint: map-get($breakpoints, $size);
+    // variable
+    $breakpoint: map.get($breakpoints, $size);
     @media screen and (min-width: $breakpoint) {
       @content;
     }
@@ -24,7 +25,7 @@
 }
 
 @mixin whiteText() {
-  &[data-type="white"] {
+  &[data-type='white'] {
     color: clr(neutral, 100);
   }
 }

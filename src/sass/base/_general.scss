@@ -1,6 +1,5 @@
 @use '../abstracts/' as *;
 
-
 body {
   @include fontSize(400);
   font-weight: $fw-regular;
@@ -14,7 +13,7 @@ p:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-section{
+section {
   padding-block: $section-padding;
   padding-inline: calc($section-padding * 2 - $container-inline-padding);
 }
